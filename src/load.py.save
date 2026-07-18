@@ -1,0 +1,13 @@
+import pandas as pd
+if_exists="replace",from src.database import engine
+
+df = pd.read_csv("data/clean_sales.csv")
+
+df.to_sql(
+    "raw_sales",
+    engine,
+    if_exists="append",
+    index=False
+)
+
+print("Loaded Successfully")
