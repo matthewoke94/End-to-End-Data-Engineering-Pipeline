@@ -1,6 +1,6 @@
 # End-to-End Data Engineering Pipeline
 
-A production-style ETL pipeline built with **Python, PostgreSQL, Docker, SQLAlchemy, and Pandas** that demonstrates how raw sales data can be extracted, transformed, and loaded into a relational database for business analytics.
+A production-ready ETL pipeline built with **Python, PostgreSQL, Docker, SQLAlchemy, Pandas, and Faker** that demonstrates how raw sales data can be extracted, transformed, and loaded into a relational database for business analytics.
 
 ---
 
@@ -38,9 +38,9 @@ SQL Analytics
 
 # Business Value
 
-This project demonstrates how organizations can automate sales data ingestion, standardize records, and prepare reliable datasets for reporting and business intelligence.
+This project demonstrates how organizations can automate sales data ingestion, eliminate manual data processing, and prepare reliable datasets for reporting and business intelligence.
 
-The pipeline eliminates manual processing while providing a scalable foundation for analytics and decision-making.
+The pipeline creates a scalable foundation for analytics and supports faster business decision-making.
 
 ---
 
@@ -48,12 +48,12 @@ The pipeline eliminates manual processing while providing a scalable foundation 
 
 - Generate 500 realistic sales records
 - Automated ETL workflow
+- Data cleaning and validation
 - Revenue calculation
 - Profit calculation
-- Data cleaning
-- PostgreSQL data warehouse
-- Dockerized database
-- SQL analytics
+- PostgreSQL database loading
+- Dockerized database environment
+- SQL-ready analytics
 
 ---
 
@@ -93,29 +93,21 @@ The pipeline eliminates manual processing while providing a scalable foundation 
 
 ![Pipeline](screenshots/pipeline_execution.png)
 
----
-
 ## Raw Sales Data
 
 ![Raw Data](screenshots/data_generation.png)
-
----
 
 ## Transformed Sales Data
 
 ![Transformation](screenshots/data_transformation.png)
 
----
-
 ## PostgreSQL Database
 
 ![Database](screenshots/postgres_database.png)
 
----
-
 ## SQL Analytics
 
-![SQL](screenshots/sql_analytics.png)
+![SQL Analytics](screenshots/sql_analytics.png)
 
 ---
 
@@ -133,11 +125,11 @@ python -m src.load
 
 # Results
 
-- ✅ 500 Sales Records Generated
-- ✅ Data Cleaned & Transformed
-- ✅ Revenue & Profit Calculated
-- ✅ Loaded into PostgreSQL
-- ✅ SQL Analytics Ready
+- 500 synthetic sales records generated
+- Automated ETL pipeline completed
+- Revenue and profit calculated
+- Data successfully loaded into PostgreSQL
+- Database ready for SQL analytics
 
 ---
 
@@ -145,7 +137,7 @@ python -m src.load
 
 - Apache Airflow orchestration
 - dbt transformations
-- Great Expectations data validation
+- Great Expectations validation
 - AWS S3 integration
 - Power BI dashboard
 - Tableau dashboard
